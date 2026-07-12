@@ -1,0 +1,49 @@
+/* ===== Impostazioni generali della pagina ===== */
+body {
+  font-family: monospace;      /* font a larghezza fissa, look "da terminale" */
+  max-width: 600px;            /* la colonna di testo non supera i 600px */
+  margin: 40px auto;           /* 40px sopra/sotto, "auto" ai lati = centrata */
+  padding: 0 20px;             /* un po' di respiro ai bordi sul telefono */
+  line-height: 1.6;            /* spazio tra le righe, si legge meglio */
+  color: #111;                 /* testo quasi-nero, non nero puro */
+  background: #fff;            /* sfondo bianco */
+}
+
+/* ===== Titolo principale ===== */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+/* ===== Link ===== */
+a {
+  color: #111;                 /* niente blu: link neri come il testo */
+}
+
+a:hover {
+  background: #111;            /* al passaggio del mouse... */
+  color: #fff;                 /* ...si invertono i colori */
+}
+
+/* ===== La lista dei link ===== */
+ul {
+  list-style: none;            /* toglie i pallini */
+  padding: 0;                  /* toglie il rientro di default */
+}
+
+li {
+  margin: 6px 0;               /* un po' di spazio tra una voce e l'altra */
+}
+
+/* ===== Linea e footer ===== */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;  /* una linea grigia sottile */
+  margin: 30px 0;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #777;                 /* grigio: meno importante del resto */
+}
