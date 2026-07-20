@@ -20,6 +20,12 @@ body.home {
   padding: 0 20px;             /* un po' di respiro ai bordi sul telefono */
 }
 
+/* Le immagini nel contenuto non sforano mai la colonna */
+.container img {
+  max-width: 100%;             /* al massimo larghe quanto la colonna */
+  height: auto;                /* l'altezza segue, niente deformazioni */
+}
+
 /* La barra del path: a tutta larghezza, look da terminale */
 .pathbar {
   font-family: monospace;
