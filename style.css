@@ -1,12 +1,31 @@
 /* ===== Impostazioni generali della pagina ===== */
 body {
-  font-family: monospace;      /* font a larghezza fissa, look "da terminale" */
-  max-width: 600px;            /* la colonna di testo non supera i 600px */
-  margin: 40px auto;           /* 40px sopra/sotto, "auto" ai lati = centrata */
-  padding: 0 20px;             /* un po' di respiro ai bordi sul telefono */
+  font-family: Georgia, serif; /* font con le grazie, "da lettura" */
+  margin: 0;                   /* il body occupa tutta la larghezza */
   line-height: 1.6;            /* spazio tra le righe, si legge meglio */
   color: #111;                 /* testo quasi-nero, non nero puro */
-  background: #fff;            /* sfondo bianco */
+  background: #fcf4ef;         /* crema caldo, per le pagine di testo */
+}
+
+/* La sola home ha il look "da terminale": monospace su bianco */
+body.home {
+  font-family: monospace;
+  background: #fff;
+}
+
+/* Il contenuto vero e proprio: colonna centrata di 600px */
+.container {
+  max-width: 600px;
+  margin: 40px auto;           /* 40px sopra/sotto, "auto" ai lati = centrata */
+  padding: 0 20px;             /* un po' di respiro ai bordi sul telefono */
+}
+
+/* La barra del path: a tutta larghezza, look da terminale */
+.pathbar {
+  font-family: monospace;
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #111;  /* la linea sotto la barra */
 }
 
 /* ===== Titolo principale ===== */
@@ -46,4 +65,10 @@ footer {
   margin-top: 40px;
   font-size: 0.85rem;
   color: #777;                 /* grigio: meno importante del resto */
+}
+
+/* ===== Blog: legenda dei simboli ===== */
+.legenda {
+  font-size: 0.85rem;
+  color: #777;                 /* stesso grigio del footer */
 }
