@@ -67,14 +67,12 @@ hr {
   margin: 30px 0;
 }
 
-footer {
-  margin-top: 40px;
+/* footer e legenda condividono lo stesso stile "in sordina" (grigio piccolo) */
+footer, .legenda {
   font-size: 0.85rem;
   color: #777;                 /* grigio: meno importante del resto */
 }
 
-/* ===== Blog: legenda dei simboli ===== */
-.legenda {
-  font-size: 0.85rem;
-  color: #777;                 /* stesso grigio del footer */
+footer {
+  margin-top: 40px;            /* solo il footer stacca dall'alto */
 }
