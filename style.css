@@ -76,3 +76,36 @@ footer, .legenda {
 footer {
   margin-top: 40px;            /* solo il footer stacca dall'alto */
 }
+
+/* ===== Articoli tecnici: codice, tabelle, citazioni, figure ===== */
+/* Blocchi di codice: monospace su sfondo, con scroll se le righe sono lunghe */
+pre {
+  background: #f0e9e2;         /* crema più scuro, fa risaltare il codice */
+  padding: 12px 15px;
+  overflow-x: auto;            /* righe lunghe scrollano dentro il riquadro */
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+code { font-family: monospace; } /* anche il codice "inline" nel testo */
+
+/* Citazioni: una barra grigia a sinistra */
+blockquote {
+  border-left: 3px solid #ccc;
+  margin: 20px 0;
+  padding: 5px 20px;
+  color: #333;
+}
+
+/* Tabella: il wrapper .scroll le permette di scorrere su schermi stretti */
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Figure: immagine + didascalia grigia sotto */
+figure { margin: 20px 0; }
+figcaption { font-size: 0.85rem; color: #777; margin-top: 6px; }
